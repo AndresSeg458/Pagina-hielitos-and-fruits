@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hielitos and Fruit - Heladería, Cafetería y Comidas Rápidas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-ice-cream"></i> Hielitos and Fruit</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenidos a Hielitos and Fruit</h1>
+            <p>Los mejores helados artesanales, café de calidad y deliciosas comidas rápidas</p>
+            <a href="#menu" class="cta-button">Ver Nuestro Menú</a>
+        </div>
+        <div class="hero-image">
+            <div class="placeholder-image">
+                <i class="fas fa-ice-cream"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Acerca de -->
+    <section class="about">
+        <div class="container">
+            <h2>Nuestra Historia</h2>
+            <p>Desde hace más de 8 años, Hielitos and Fruit ha sido el lugar favorito de las familias para disfrutar de los mejores helados artesanales, café de calidad premium y deliciosas comidas rápidas. Preparamos cada helado con frutas frescas y ingredientes naturales, ofreciendo una experiencia única y refrescante.</p>
+        </div>
+    </section>
+
+    <!-- Sección Menú -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Nuestro Menú</h2>
+            
+            <div class="menu-categories">
+                <div class="category active" data-category="helados">Helados</div>
+                <div class="category" data-category="bebidas">Bebidas & Café</div>
+                <div class="category" data-category="comidas">Comidas Rápidas</div>
+            </div>
+
+            <div class="menu-items">
+                <!-- Helados -->
+                <div class="menu-category" id="helados">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Cholado</h3>
+                            <p>Granizado, con fruta, helado galleta </p>
+                        </div>
+                        <div class="item-price">$5.000</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Helado de Chocolate</h3>
+                            <p>Intenso sabor a chocolate con chips de chocolate belga</p>
+                        </div>
+                        <div class="item-price">$8.000</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Helado de Mango</h3>
+                            <p>Refrescante helado con mango maduro y un toque tropical</p>
+                        </div>
+                        <div class="item-price">$8.500</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Sundae Especial</h3>
+                            <p>3 bolas de helado, salsa de chocolate, crema y cereza</p>
+                        </div>
+                        <div class="item-price">$12.000</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Malteada Premium</h3>
+                            <p>Espesa malteada con helado, leche y sabor a elección</p>
+                        </div>
+                        <div class="item-price">$10.000</div>
+                    </div>
+                </div>
+
+                <!-- Bebidas & Café -->
+                <div class="menu-category" id="bebidas" style="display: none;">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Café Americano</h3>
+                            <p>Café de grano premium, tostado artesanal</p>
+                        </div>
+                        <div class="item-price">$4.500</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Cappuccino</h3>
+                            <p>Espresso con leche vaporizada y espuma cremosa</p>
+                        </div>
+                        <div class="item-price">$6.000</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Frappé de Café</h3>
+                            <p>Bebida helada con café, hielo y crema batida</p>
+                        </div>
+                        <div class="item-price">$7.500</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Smoothie de Frutas</h3>
+                            <p>Batido natural con frutas frescas y yogurt</p>
+                        </div>
+                        <div class="item-price">$8.000</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Limonada Frozen</h3>
+                            <p>Limonada granizada con hielo y menta fresca</p>
+                        </div>
+                        <div class="item-price">$5.500</div>
+                    </div>
+                </div>
+
+                <!-- Comidas Rápidas -->
+                <div class="menu-category" id="comidas" style="display: none;">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Hamburguesa Clásica</h3>
+                            <p>Carne jugosa, lechuga, tomate, cebolla y papas fritas</p>
+                        </div>
+                        <div class="item-price">$14.000</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Hot Dog Especial</h3>
+                            <p>Salchicha premium con salsas y papas crujientes</p>
+                        </div>
+                        <div class="item-price">$10.000</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Sandwich Club</h3>
+                            <p>Pollo, tocineta, queso, lechuga y tomate en pan tostado</p>
+                        </div>
+                        <div class="item-price">$12.500</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Quesadilla de Pollo</h3>
+                            <p>Tortilla con pollo, queso derretido y guacamole</p>
+                        </div>
+                        <div class="item-price">$11.000</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Nachos Supreme</h3>
+                            <p>Nachos con queso, carne, guacamole y crema agria</p>
+                        </div>
+                        <div class="item-price">$13.000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+57 301 234 5678</p>
+                            <p>+57 1 234 5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@hielitosandfruit.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horarios</h3>
+                            <p>Lun - Dom: 11:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Carrera 15 #32-18<br>Bogotá, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form>
+                        <input type="text" placeholder="Tu Nombre" required>
+                        <input type="email" placeholder="Tu Email" required>
+                        <input type="tel" placeholder="Tu Teléfono">
+                        <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Ubicación -->
+    <section id="ubicacion" class="location">
+        <div class="container">
+            <h2>Nuestra Ubicación</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Encuéntranos Fácilmente</h3>
+                    <p>Estamos ubicados en una zona céntrica y familiar, perfecta para disfrutar de nuestros helados y comidas. Fácil acceso y ambiente acogedor.</p>
+                    <div class="location-details">
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Carrera 15 #32-18, Bogotá</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-subway"></i>
+                            <span>Estación TransMilenio: Portal Norte</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-car"></i>
+                            <span>Parqueadero gratuito disponible</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <i class="fas fa-map"></i>
+                    <p>Mapa Interactivo</p>
+                    <small>Aquí puedes integrar Google Maps o cualquier servicio de mapas</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-ice-cream"></i> Hielitos and Fruit</h3>
+                    <p>Helados artesanales y comidas deliciosas desde 2016</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lunes a Domingo<br>11:00 AM - 10:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>+57 301 234 5678<br>info@hielitosandfruit.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hielitos and Fruit. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
