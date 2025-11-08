@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header y Navegación -->
@@ -14,19 +17,13 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                    <h2><i class="fas fa-ice-cream"></i> Hielitos and Fruit</h2>
+                    <h2><i class="fas fa-ice-cream"></i> Hielitos and Fruits</h2>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#menu">Menú</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#ubicacion">Ubicación</a></li>
                 </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </div>
         </nav>
     </header>
@@ -34,24 +31,24 @@
     <!-- Sección Hero -->
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <h1>Bienvenidos a Hielitos and Fruit</h1>
-            <p>Los mejores helados artesanales, café de calidad y deliciosas comidas rápidas</p>
+            <h1 style="font-family: pacifico;">Bienvenidos a Hielitos and Fruits</h1>
+            <p>Los mejores helados, café de calidad y deliciosas comidas rápidas</p>
             <a href="#menu" class="cta-button">Ver Nuestro Menú</a>
         </div>
-        <div class="hero-image">
+        <!-- <div class="hero-image">
             <div class="placeholder-image">
                 <i class="fas fa-ice-cream"></i>
             </div>
-        </div>
+        </div> -->
     </section>
 
-    <!-- Sección Acerca de -->
+    <!-- Sección Acerca de
     <section class="about">
         <div class="container">
             <h2>Nuestra Historia</h2>
             <p>Desde hace más de 8 años, Hielitos and Fruit ha sido el lugar favorito de las familias para disfrutar de los mejores helados artesanales, café de calidad premium y deliciosas comidas rápidas. Preparamos cada helado con frutas frescas y ingredientes naturales, ofreciendo una experiencia única y refrescante.</p>
         </div>
-    </section>
+    </section> -->
 
     <!-- Sección Menú -->
     <section id="menu" class="menu">
@@ -68,6 +65,9 @@
                 <!-- Helados -->
                 <div class="menu-category" id="helados">
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="/src/images/productos/cholado.jpeg" alt="Cholado">
+                        </div>
                         <div class="item-info">
                             <h3>Cholado</h3>
                             <p>Granizado, con fruta, helado galleta </p>
@@ -75,13 +75,19 @@
                         <div class="item-price">$5.000</div>
                     </div>
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="/src/images/productos/helado copa.jpeg" alt="Helado de Chocolate">
+                        </div>
                         <div class="item-info">
-                            <h3>Helado de Chocolate</h3>
+                            <h3>Helado</h3>
                             <p>Intenso sabor a chocolate con chips de chocolate belga</p>
                         </div>
                         <div class="item-price">$8.000</div>
                     </div>
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="/src/images/productos/mango biche.jpeg" alt="Helado de Mango">
+                        </div>
                         <div class="item-info">
                             <h3>Helado de Mango</h3>
                             <p>Refrescante helado con mango maduro y un toque tropical</p>
@@ -89,6 +95,9 @@
                         <div class="item-price">$8.500</div>
                     </div>
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/60x60/ff6b9d/ffffff?text=🍨" alt="Sundae Especial">
+                        </div>
                         <div class="item-info">
                             <h3>Sundae Especial</h3>
                             <p>3 bolas de helado, salsa de chocolate, crema y cereza</p>
@@ -96,6 +105,9 @@
                         <div class="item-price">$12.000</div>
                     </div>
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/60x60/DDA0DD/ffffff?text=🥤" alt="Malteada Premium">
+                        </div>
                         <div class="item-info">
                             <h3>Malteada Premium</h3>
                             <p>Espesa malteada con helado, leche y sabor a elección</p>
@@ -107,6 +119,9 @@
                 <!-- Bebidas & Café -->
                 <div class="menu-category" id="bebidas" style="display: none;">
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/60x60/8B4513/ffffff?text=☕" alt="Café Americano">
+                        </div>
                         <div class="item-info">
                             <h3>Café Americano</h3>
                             <p>Café de grano premium, tostado artesanal</p>
@@ -114,6 +129,9 @@
                         <div class="item-price">$4.500</div>
                     </div>
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/60x60/D2691E/ffffff?text=☕" alt="Cappuccino">
+                        </div>
                         <div class="item-info">
                             <h3>Cappuccino</h3>
                             <p>Espresso con leche vaporizada y espuma cremosa</p>
@@ -121,6 +139,9 @@
                         <div class="item-price">$6.000</div>
                     </div>
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/60x60/8B4513/ffffff?text=🧊" alt="Frappé de Café">
+                        </div>
                         <div class="item-info">
                             <h3>Frappé de Café</h3>
                             <p>Bebida helada con café, hielo y crema batida</p>
@@ -128,6 +149,9 @@
                         <div class="item-price">$7.500</div>
                     </div>
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/60x60/FF69B4/ffffff?text=🍓" alt="Smoothie de Frutas">
+                        </div>
                         <div class="item-info">
                             <h3>Smoothie de Frutas</h3>
                             <p>Batido natural con frutas frescas y yogurt</p>
@@ -135,6 +159,9 @@
                         <div class="item-price">$8.000</div>
                     </div>
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/60x60/32CD32/ffffff?text=🍋" alt="Limonada Frozen">
+                        </div>
                         <div class="item-info">
                             <h3>Limonada Frozen</h3>
                             <p>Limonada granizada con hielo y menta fresca</p>
@@ -146,6 +173,9 @@
                 <!-- Comidas Rápidas -->
                 <div class="menu-category" id="comidas" style="display: none;">
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/60x60/FF6347/ffffff?text=🍔" alt="Hamburguesa Clásica">
+                        </div>
                         <div class="item-info">
                             <h3>Hamburguesa Clásica</h3>
                             <p>Carne jugosa, lechuga, tomate, cebolla y papas fritas</p>
@@ -153,6 +183,9 @@
                         <div class="item-price">$14.000</div>
                     </div>
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/60x60/DAA520/ffffff?text=🌭" alt="Hot Dog Especial">
+                        </div>
                         <div class="item-info">
                             <h3>Hot Dog Especial</h3>
                             <p>Salchicha premium con salsas y papas crujientes</p>
@@ -160,6 +193,9 @@
                         <div class="item-price">$10.000</div>
                     </div>
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/60x60/F4A460/ffffff?text=🥪" alt="Sandwich Club">
+                        </div>
                         <div class="item-info">
                             <h3>Sandwich Club</h3>
                             <p>Pollo, tocineta, queso, lechuga y tomate en pan tostado</p>
@@ -167,6 +203,9 @@
                         <div class="item-price">$12.500</div>
                     </div>
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/60x60/FFD700/ffffff?text=🌮" alt="Quesadilla de Pollo">
+                        </div>
                         <div class="item-info">
                             <h3>Quesadilla de Pollo</h3>
                             <p>Tortilla con pollo, queso derretido y guacamole</p>
@@ -174,6 +213,9 @@
                         <div class="item-price">$11.000</div>
                     </div>
                     <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/60x60/FF8C00/ffffff?text=🧀" alt="Nachos Supreme">
+                        </div>
                         <div class="item-info">
                             <h3>Nachos Supreme</h3>
                             <p>Nachos con queso, carne, guacamole y crema agria</p>
@@ -185,55 +227,7 @@
         </div>
     </section>
 
-    <!-- Sección Contacto -->
-    <section id="contacto" class="contact">
-        <div class="container">
-            <h2>Contáctanos</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Teléfono</h3>
-                            <p>+57 301 234 5678</p>
-                            <p>+57 1 234 5678</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>info@hielitosandfruit.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h3>Horarios</h3>
-                            <p>Lun - Dom: 11:00 AM - 10:00 PM</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Dirección</h3>
-                            <p>Carrera 15 #32-18<br>Bogotá, Colombia</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>Envíanos un Mensaje</h3>
-                    <form>
-                        <input type="text" placeholder="Tu Nombre" required>
-                        <input type="email" placeholder="Tu Email" required>
-                        <input type="tel" placeholder="Tu Teléfono">
-                        <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
-                        <button type="submit">Enviar Mensaje</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Sección Ubicación -->
     <section id="ubicacion" class="location">
@@ -242,19 +236,13 @@
             <div class="location-content">
                 <div class="location-info">
                     <h3>Encuéntranos Fácilmente</h3>
-                    <p>Estamos ubicados en una zona céntrica y familiar, perfecta para disfrutar de nuestros helados y comidas. Fácil acceso y ambiente acogedor.</p>
+                    <p>Nos encuentras en Las Lajas, justo sobre el Hotel El Peregrino, en un punto perfecto para refrescar tu caminata y disfrutar del paisaje. Si vienes visitando el Santuario.</p>
+<p>¡No tiene pérdida! Aquí te esperamos con sabores fríos, frescos y llenos de color.</p>
+ 
                     <div class="location-details">
                         <div class="detail">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Carrera 15 #32-18, Bogotá</span>
-                        </div>
-                        <div class="detail">
-                            <i class="fas fa-subway"></i>
-                            <span>Estación TransMilenio: Portal Norte</span>
-                        </div>
-                        <div class="detail">
-                            <i class="fas fa-car"></i>
-                            <span>Parqueadero gratuito disponible</span>
+                            <span>Las Lajas, Ipiales, Nariño, Colombia</span>
                         </div>
                     </div>
                 </div>
