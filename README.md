@@ -85,25 +85,3 @@ Para agregar un botón de WhatsApp flotante para pedidos de helados, agrega este
     <i class="fab fa-whatsapp"></i>
 </a>
 ```
-
-## 🎯 Próximas Mejoras Sugeridas
-
-- [ ] Integración con Google Maps real
-- [ ] Galería de fotos de helados y productos
-- [ ] Sistema de reservas online
-- [ ] Blog o sección de noticias
-- [ ] Integración con redes sociales
-- [ ] Sistema de pedidos online
-- [ ] Múltiples idiomas
-
-## 📧 Soporte
-
-Para modificaciones o soporte técnico, contacta al desarrollador.
-
-## 📄 Licencia
-
-Este proyecto es de uso libre para fines comerciales y educativos.
-
----
-
-**Desarrollado con ❤️ para Hielitos and Fruit** 🍦
